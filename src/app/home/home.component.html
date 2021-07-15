@@ -1,1 +1,28 @@
-<p>home works!</p>
+<div class="container"> <!--Start of container-->
+    <div class="row justify-content-center"> <!-- Start of first row-->
+        <div class="col-xs-12">
+            <h1> Welcome!</h1>
+        </div>
+    </div> <!-- End of first row-->
+    <div class="row justify-content-center"> <!-- Start of second row-->
+        <div class="col-xs-12">
+            <p>I'm learning how to use angular! On this page I will demonstrate simple string interpolation and property binding!</p>
+        </div>
+    </div> <!-- End of second row-->
+    <div class="row justify-content-center"> <!-- Start of third row-->
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="card-header">
+                    Click Counter
+                </div>
+                <div class="card-body">
+                    <h5>Click the button to add a click</h5>
+                    <p class="card-text">You have clicked {{ clickCount }} times!</p> 
+                    <!--String interpolation is used by appending our variable between the two {{ }}-->
+                    <a href="#" class="btn btn-primary" (click)="countClick()">Click!</a>
+                    <!--Binding to the a tag property and using the click event to call the countClick function-->
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of third row-->
+</div> <!--End of container-->
