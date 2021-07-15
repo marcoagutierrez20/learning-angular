@@ -1,1 +1,23 @@
-<p>data-binding works!</p>
+<div class="container"> <!--Start of container-->
+    <div class="row justify-content-center"> <!-- Start of first row-->
+        <div class="col-xs-12">
+            <h1> Databinding</h1>
+        </div>
+    </div> <!-- End of first row-->
+    <div class="row justify-content-center"> <!-- Start of second row-->
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="card-header">
+                    Databinding Example
+                </div>
+                <div class="card-body">
+                    <h5>Type something into the box</h5>
+                    <input type="text" [(ngModel)]="typedText">
+                    <!--ngModel is used to bind the input property to the typedText variable-->
+                    <p class="card-text">You typed {{ typedText }}!</p> 
+                    <!--Using this p tag and interpolation to verify that binding is working-->
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of second row-->
+</div> <!--End of container-->
