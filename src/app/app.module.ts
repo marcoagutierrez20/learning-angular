@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { HttpComponent } from './http/http.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DataBindingComponent,
+    HttpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

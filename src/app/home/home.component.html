@@ -31,10 +31,7 @@
         </div>
     </div> <!-- End of third row-->
     <div class="row justify-content-center"> <!-- Start of fourth row-->
-        <div class="col-xs-12" [ngStyle]="{
-            'background-color' : clickCount >= 5 ? 'yellow' : 'lightgray',
-            'border': clickCount >= 5 ? '4px solid black' : 'none'
-        }">
+        <div class="col-xs-12" [ngClass]="setClassess()">
             <ng-template [ngIf]="clickCount >= 5" [ngIfElse]="none" >
                 <h2>ng-template activated!</h2>
             </ng-template>
@@ -44,3 +41,10 @@
         </div>
     </div> <!-- End of third row-->
 </div> <!--End of container-->
+
+<!-- 
+    [ngStyle]="{
+            'background-color' : clickCount >= 5 ? 'yellow' : 'lightgray',
+            'border': clickCount >= 5 ? '4px solid black' : 'none'
+        }">
+-->

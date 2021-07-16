@@ -16,5 +16,14 @@ export class HomeComponent implements OnInit {
 
   countClick() { //countClick function will add 1 onto clickCount
     this.clickCount += 1;
+    return false;
+  }
+
+  setClassess() {
+    let myClassess = {
+      active: this.clickCount >= 5,
+      notactive: this.clickCount < 5,
+    }
+    return myClassess;
   }
 }
