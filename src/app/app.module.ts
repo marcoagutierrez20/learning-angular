@@ -8,6 +8,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { HttpComponent } from './http/http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LibraryComponent } from './library/library.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     DataBindingComponent,
     HttpComponent,
+    LibraryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

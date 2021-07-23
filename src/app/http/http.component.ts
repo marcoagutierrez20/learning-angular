@@ -8,15 +8,16 @@ import { HttpService } from '../http.service';
 })
 export class HttpComponent implements OnInit {
 
-  pokemon: Object | any;
+  pokemons: Object | any;
 
 
   constructor(private _http: HttpService) { }
 
   ngOnInit(): void {
     this._http.getPokemon().subscribe(data => {
-      this.pokemon = data;
-      console.log(this.pokemon);
+      this.pokemons = data;
+      this.pokemons = this.pokemons.results;
+      console.log(this.pokemons);
     })
   }
 }

@@ -2,8 +2,8 @@
     <div class="row"> <!-- Start of first row-->
         <div class="col-xs-12">
            <ul >
-               <li>
-
+               <li *ngFor="let pokemon of pokemons">
+                  <p>{{ pokemon.name }}</p>  
                </li>
            </ul>
         </div>
